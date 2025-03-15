@@ -1,0 +1,218 @@
+/* Mengatur gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur header dan navigasi */
+header {
+    background-color: #00796b; /* Warna latar belakang header */
+    padding: 10px 20px; /* Padding di atas dan bawah serta kiri dan kanan */
+}
+
+/* Mengatur navbar untuk berada di sebelah kanan */
+.navbar {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: flex-end; /* Menyusun navbar ke sisi kanan */
+}
+
+.navbar ul {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    margin: 0; /* Menghilangkan margin pada <ul> */
+    padding: 0; /* Menghilangkan padding pada <ul> */
+    display: flex; /* Menampilkan item dalam satu baris */
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Memberikan jarak antar item */
+}
+
+.navbar ul li a {
+    color: white; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-size: 18px; /* Ukuran font */
+    padding: 10px 15px; /* Padding di dalam link */
+}
+
+.navbar ul li a:hover {
+    background-color: #004d40; /* Warna latar belakang saat hover */
+    border-radius: 50px; /* Sudut melengkung saat hover */
+}
+h2{
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 0px; /* Memberikan jarak bawah untuk <h2> */
+    padding: 10px;
+    
+ 
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 10px; /* buat ruang di dalam border */
+   margin: 17px 0; /* buat ruang di luar border */
+   border-radius: 19px; /* biar sudut bulat */
+   animation: moveImage 3s ease-out forwards; 
+
+}
+.upacara{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 10px; 
+   margin: 17px 0; 
+   border-radius: 19px; 
+   animation: moveImage 2s ease-out forwards; 
+
+}
+
+
+.gambar1{
+    float: left;
+    margin-right: 12px; 
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    animation: moveImage 2s ease-out forwards; 
+}
+.gambarr{
+    float: left;
+    margin-right: 20px; 
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    animation: moveImage 4s ease-out forwards; 
+}
+.container {
+    display: block; /* Elemen di dalam kontainer akan diatur secara vertikal */
+    border: 2px solid #333; /* Memberikan border kotak */
+    padding: 20px; /* Memberikan ruang di dalam kotak */
+    margin: 20px; /* Memberikan jarak di luar kotak */
+    width: 300px; /* Menentukan lebar kotak */
+    border:6px solid #545252; 
+    border-radius: 15px;
+    animation: moveDown 2s forwards;
+
+}
+.ketua {
+    font-size: 16px;
+    line-height: 2.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 10px; /* buat ruang di dalam border */
+   margin: 17px 0; /* buat ruang di luar border */
+   border-radius: 21px; /* biar sudut bulat */
+   animation: moveImage 2s ease-out forwards; 
+}
+.gambar2{
+    float: right;
+    margin-right: 2px; 
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px; 
+    animation: moveImage 3s ease-out forwards; 
+
+}
+.rumah{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 12px; /* buat ruang di dalam border */
+   margin: 19px 0; /* buat ruang di luar border */
+   border-radius: 21px; /* biar sudut bulat */
+   animation: moveImage 2s ease-out forwards; }
+
+.pamalian{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 5px solid #545252; 
+   padding: 10px; /* buat ruang di dalam border */
+   margin: 17px 0; /* buat ruang di luar border */
+   border-radius: 21px; /* biar sudut bulat */
+   animation: moveImage 2s ease-out forwards; 
+}
+
+.kepercayaan{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 12px; /* buat ruang di dalam border */
+   margin: 10px 0; /* buat ruang di luar border */
+   border-radius: 20px; /* biar sudut bulat */
+   animation: moveImage 2s ease-out forwards;
+}
+
+.fakta{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 5px solid #545252; 
+   padding: 10px; /* buat ruang di dalam border */
+   margin: 17px 0; /* buat ruang di luar border */
+   border-radius: 21px; /* biar sudut bulat */
+   animation: moveImage 2s ease-out forwards;
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Teks dimulai dari posisi lebih atas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Teks bergerak ke posisi normal */
+    }
+}
+
+@keyframes moveImage {
+    1% {
+        transform: translateX(+200px); /* Posisi awal gambar di kiri */
+    }
+    100% {
+        transform: translateX(0); /* Gambar bergerak ke posisi normal */
+    }
+}
+/* footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+.simple-footer {
+    background-color: #00796b;  /* Warna latar belakang gelap */
+    color: #fff;             /* Warna teks putih */
+    text-align: center;      /* Posisikan teks di tengah */
+    padding: 20px 0;         /* Spasi atas dan bawah */
+    font-family: Arial, sans-serif; /* Font simpel */
+    font-size: 14px;         /* Ukuran font */
+    animation: moveImage 2s ease-out forwards;
+    cursor: pointer;
+}
+
+.simple-footer p {
+    margin: 0;  /* Menghilangkan margin dari paragraf */
+}
+
+
+
+
+ 

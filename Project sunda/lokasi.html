@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Kampung Adat Naga</title>
+</head>
+<body>
+<!-- navbar -->
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Tentang</a></li>
+            <li><a href="lokasi.html">Lokasi</a></li>
+            <li><a href="https://www.instagram.com/dikaalhaidarr?utm_source=qr&igsh=MWllZXFncGJycjBpZw==">Me</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- navbar -->
+   <div class="container">
+    <h2>Lokasi kampung Naga</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.937025675376!2d107.98978237400269!3d-7.360956292648108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ab81533e7381%3A0xaad3d7b0b36b33e9!2sKampung%20Naga!5e0!3m2!1sid!2sid!4v1740228900737!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   <style>
+    .container{
+    line-height: 1.5;
+    text-align: justify;
+   cursor: pointer;
+   border: 6px solid #545252; 
+   padding: 10px; /* buat ruang di dalam border */
+   margin: 17px 0; /* buat ruang di luar border */
+   border-radius: 19px; /* biar sudut bulat */
+   animation: moveDown 1s ease-out forwards; 
+    }
+    h2{
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 0px; /* Memberikan jarak bawah untuk <h2> */
+    padding: 10px;
+}
+/* buat header sama navigasi */
+header {
+    background-color: #00796b; /* Warna latar belakang header */
+    padding: 10px 20px; /* Padding di atas dan bawah serta kiri dan kanan */
+}
+
+/* Mengatur navbar untuk berada di sebelah kanan */
+.navbar {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: flex-end; /* Menyusun navbar ke sisi kanan */
+}
+
+.navbar ul {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    margin: 0; /* Menghilangkan margin pada <ul> */
+    padding: 0; /* Menghilangkan padding pada <ul> */
+    display: flex; /* Menampilkan item dalam satu baris */
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Memberikan jarak antar item */
+}
+
+.navbar ul li a {
+    color: white; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-size: 18px; /* Ukuran font */
+    padding: 10px 15px; /* Padding di dalam link */
+}
+
+.navbar ul li a:hover {
+    background-color: #004d40; /* Warna latar belakang saat hover */
+    border-radius: 50px; /* Sudut melengkung saat hover */
+}
+
+
+/* buat header sama navigasi */
+
+    @keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Teks dimulai dari posisi lebih atas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Teks bergerak ke posisi normal */
+    }
+}
+   </style>
+</body>
+</html>
